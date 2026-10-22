@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy – Bunny &amp; Cat</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>Privacy Policy</h1>
+<p><strong>Effective date:</strong> 22 October 2026. <strong>Operator:</strong> the owner of the Bunny &amp; Cat YouTube channel ("we").</p>
+
+<h2>1. What this app does</h2>
+<p>Bunny &amp; Cat is a private automation tool. It creates short educational videos and uploads them to the owner's own YouTube channel. Uploads are set to <em>private</em>. The owner decides separately whether any video is made public.</p>
+
+<h2>2. Google user data we access</h2>
+<p>The owner signs in with Google and grants two permissions (OAuth scopes):</p>
+<ul>
+<li><code>https://www.googleapis.com/auth/youtube.upload</code> – to upload videos to the owner's channel.</li>
+<li><code>https://www.googleapis.com/auth/youtube.readonly</code> – to read back the status of uploaded videos and confirm they are private.</li>
+</ul>
+<p>We store a <strong>refresh token</strong> that lets the tool obtain short-lived access tokens without asking the owner to sign in again. Access tokens are used only for the request in which they are obtained and are not stored.</p>
+
+<h2>3. How data is stored and protected</h2>
+<ul>
+<li>The refresh token is encrypted with a key kept separately. The encrypted token and key are stored as encrypted secrets in the owner's private GitHub repository settings. They are never published, shared in chat, or written into code or logs.</li>
+<li>The publish log records, for each video, the title, the episode name, the upload result, and the YouTube video ID and link. It is kept in the owner's private repository.</li>
+<li>No refresh token or access token is sent to a web browser.</li>
+</ul>
+
+<h2>4. How we use the data</h2>
+<p>We use Google user data only to upload and verify videos on the owner's own channel, and to show the owner the upload status and any reconnection message. We do not sell Google user data. We do not use it for advertising, profiling, or training AI or machine-learning models. We do not share it with third parties except as described in section 6.</p>
+<p>Use of information received from Google APIs complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+
+<h2>5. Children</h2>
+<p>The channel makes content for young children. This tool does not collect personal information from viewers or from children. It does not use cookies, analytics or advertising on this website.</p>
+
+<h2>6. Third-party services</h2>
+<ul>
+<li><strong>Google / YouTube</strong> – authorization and video uploads. Governed by Google's privacy policy.</li>
+<li><strong>GitHub</strong> – hosts the code, runs the scheduled jobs, and stores the encrypted secrets.</li>
+<li><strong>Microsoft Edge text-to-speech</strong> – the narration script text is sent to Microsoft's speech service to create voice audio. No Google user data is sent to it.</li>
+</ul>
+
+<h2>7. Retention and deletion</h2>
+<ul>
+<li>The refresh token is kept until the owner revokes it or deletes the stored secret.</li>
+<li>To remove the app's access, the owner can go to <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> and remove "Bunny &amp; Cat", and delete the GitHub secrets. Access then stops immediately.</li>
+<li>Uploaded videos stay on YouTube until the owner removes them there.</li>
+</ul>
+
+<h2>8. Your choices</h2>
+<p>You can revoke access at any time (see section 7), or ask questions by opening an issue at <a href="https://github.com/giggle88giggle-collab/bunny-cat-legal/issues">github.com/giggle88giggle-collab/bunny-cat-legal/issues</a>.</p>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, the new version is posted on this page with a new effective date.</p>
+
+<footer><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a></footer>
+</body></html>
